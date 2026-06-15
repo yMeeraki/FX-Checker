@@ -1,4 +1,7 @@
 :root {
+
+  /* Colors */
+
   /* Neutral Color */
   --neutral-900: #0a0a0a;
   --neutral-700: #171719;
@@ -19,13 +22,136 @@
 
   /* Red */
   --red-500: #ff4141;
+
+  /* Typography */
+
+  /* Text Preset 1 */
+  --text-preset-1-size: 40px;
+  --text-preset-1-line-height: 100%;
+  --text-preset-1-letter-spacing: -0.5px;
+  --text-preset-1-weight: 700;
+
+  /* Text Preset 1 Tablet */
+  --text-preset-1-tablet-size: 32px;
+  --text-preset-1-tablet-line-height: 100%;
+  --text-preset-1-tablet-letter-spacing: -0.5px;
+  --text-preset-1-tablet-weight: 700;
+
+  /* Text Preset 2 */
+  --text-preset-2-size: 20px;
+  --text-preset-2-line-height: 120%;
+  --text-preset-2-letter-spacing: -0.5px;
+  --text-preset-2-weight: 400;
+
+  /* Text Preset 2 Bold */
+  --text-preset-2-bold-size: 20px;
+  --text-preset-2-bold-line-height: 140%;
+  --text-preset-2-bold-letter-spacing: -0.5px;
+  --text-preset-2-bold-weight: 700;
+
+  /* Text Preset 3 */
+  --text-preset-3-size: 16px;
+  --text-preset-3-line-height: 120%;
+  --text-preset-3-letter-spacing: 1px;
+  --text-preset-3-weight: 400;
+
+  /* Text Preset 3 Medium */
+  --text-preset-3-medium-size: 16px;
+  --text-preset-3-medium-line-height: 120%;
+  --text-preset-3-medium-letter-spacing: 1px;
+  --text-preset-3-medium-weight: 500;
+
+  /* Text Preset 3 Bold */
+  --text-preset-3-bold-size: 16px;
+  --text-preset-3-bold-line-height: 110%;
+  --text-preset-3-bold-letter-spacing: 1px;
+  --text-preset-3-bold-weight: 700;
+
+  /* Text Preset 4 */
+  --text-preset-4-size: 14px;
+  --text-preset-4-line-height: 120%;
+  --text-preset-4-letter-spacing: 1px;
+  --text-preset-4-weight: 400;
+
+  /* Text Preset 5 */
+  --text-preset-5-size: 12px;
+  --text-preset-5-line-height: 120%;
+  --text-preset-5-letter-spacing: 0.5px;
+  --text-preset-5-weight: 400;
+
+  /* Text Preset 5 Medium */
+  --text-preset-5-medium-size: 12px;
+  --text-preset-5-medium-line-height: 130%;
+  --text-preset-5-medium-letter-spacing: 0.5px;
+  --text-preset-5-medium-weight: 500;
+
+  /* Text Preset 6 */
+  --text-preset-6-size: 10px;
+  --text-preset-6-line-height: 100%;
+  --text-preset-6-letter-spacing: 0;
+  --text-preset-6-weight: 400;
 }
 
-body{
-    background: var(--neutral-900);
-    color: var(--neutral-50);
+.text-preset-1 {
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+  font-weight: var(--text-preset-1-weight);
 }
 
-.bg-section{
-    background: var(--neutral-700);
+.text-preset-2 {
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  font-weight: var(--text-preset-2-weight);
+}
+
+.text-preset-3 {
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing);
+  font-weight: var(--text-preset-3-weight);
+}
+
+.text-preset-4 {
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  letter-spacing: var(--text-preset-4-letter-spacing);
+  font-weight: var(--text-preset-4-weight);
+}
+
+.text-preset-5 {
+  font-size: var(--text-preset-5-size);
+  line-height: var(--text-preset-5-line-height);
+  letter-spacing: var(--text-preset-5-letter-spacing);
+  font-weight: var(--text-preset-5-weight);
+}
+
+.text-preset-6 {
+  font-size: var(--text-preset-6-size);
+  line-height: var(--text-preset-6-line-height);
+  letter-spacing: var(--text-preset-6-letter-spacing);
+  font-weight: var(--text-preset-6-weight);
+}
+
+body {
+  background: var(--neutral-900);
+  color: var(--neutral-50);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.bg-card {
+  background: var(--neutral-700);
+}
+
+.topper-section {
+  padding: 1.25em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topper-section div {
+  text-transform: uppercase;
+  color: var(--neutral-200);
 }
