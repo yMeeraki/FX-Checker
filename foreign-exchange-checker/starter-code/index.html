@@ -35,17 +35,33 @@
         <img src="./assets/images/logo.svg" alt="FX Checker" />
 
         <!-- Dynamic: number of available currencies, e.g. "55" -->
-        <div class="text-preset-4"><span>--</span> Currencies · EOD · ECB data</div>
+        <div class="text-preset-4">
+          <span>--</span> Currencies · EOD · ECB data
+        </div>
       </section>
 
       <section>
-        <div class="bg-card">
+        <div class="bg-card live-market-container">
           <!-- Live markets ticker — auto-scrolls across the page, pauses on hover -->
-          <span class="live-indicator text-preset-5-medium"><span class="live-dot"></span>LIVE MARKETS</span>
+          <span class="live-indicator text-preset-5-medium"
+            ><span class="live-dot"></span>LIVE MARKETS</span
+          >
           <!-- Dynamic: scrolling list of currency pairs, each with its rate and 24h change (▲ up / ▼ down) -->
-          Dynamic: scrolling list of currency pairs, each with its rate and 24h
-          change (▲ up / ▼ down)
-        </div>
+          <div class="scroll-container">
+  <ul class="scroll-list">
+    <!-- Original Set of Items -->
+    <li class="market">Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <!-- Duplicated Set for Seamless Loop -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+</div>
+
       </section>
     </header>
     <main>

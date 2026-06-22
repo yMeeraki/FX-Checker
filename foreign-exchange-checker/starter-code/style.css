@@ -259,6 +259,12 @@ body {
   color: var(--neutral-200);
 }
 
+.live-market-container {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+}
+
 .live-indicator {
   background: var(--lime-500);
   color: var(--neutral-900);
@@ -266,7 +272,8 @@ body {
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
-  gap: .25rem;
+  gap: 0.25rem;
+  position: absolute;
 }
 
 .live-dot {
@@ -274,4 +281,30 @@ body {
   height: 0.35rem;
   background-color: var(--neutral-900);
   border-radius: 50%;
+}
+
+.scroll-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Animates continuously for 20 seconds with a linear rhythm */
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll-container:hover .scroll-list {
+  animation-play-state: paused;
+}
+
+/* 4. Shift the element by exactly 50% (the width of the original list) */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
