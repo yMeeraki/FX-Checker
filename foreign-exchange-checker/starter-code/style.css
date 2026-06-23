@@ -273,7 +273,7 @@ body {
   color: var(--neutral-900);
   padding: var(--spacing-150) var(--spacing-200);
   text-transform: uppercase;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.25rem;
   position: absolute;
@@ -308,6 +308,6 @@ body {
     transform: translateX(50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
 }
