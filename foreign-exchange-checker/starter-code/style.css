@@ -263,7 +263,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 2.5rem;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -302,7 +302,6 @@ body {
   animation-play-state: paused;
 }
 
-/* 4. Shift the element by exactly 50% (the width of the original list) */
 @keyframes scroll-left {
   0% {
     transform: translateX(50%);
